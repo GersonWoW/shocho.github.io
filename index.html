@@ -1,69 +1,330 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ScS</title>
-    <link rel="stylesheet" href="styles01.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" 
+    crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+    <title>PortfolioWeb</title>
+
 </head>
 <body>
-   <header>
-        <div class="marco">
-            <img src="ImgScS/logo.png" alt="">
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a class="$">Home</a>
+            </div>
+            <ul class="links">
+                <li><a href="$about">About</a></li>
+                <li><a href="$project">Project</a></li>
+                <li><a href="$Skills">Skills</a></li>
+                <li><a href="$Contact">Contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-   </header>  
+
+        <div class="dropdown_menu">
+            <li><a href="$about">About</a></li>
+            <li><a href="$project">Project</a></li>
+            <li><a href="$Skills">Skills</a></li>
+            <li><a href="$Contact">Contact</a></li>
+        </div>
     
+     </header>
 
-
-    <section class="home" id="home">
-        <div class="content">
-            <h1>Inicio de la pagina</h1>
-            <p>care peo</p>
-            <a href="$"> <button>show more</button></a>
+     <!--primera seccion-->
+     <section id="perfil">
+        <div class="section_pic-container">
+            <img src="img/profile.png"
+            >
         </div>
+        <div class="section_text-container">
+            <p class="section_p1">Hi, I'm</p>
+            <h1 class="titulo">Luis G. Paulino</h1>
+            <p class="section_p2">Front-End Developer</p>
+            <!--bonotes para redirigir a whatsapp-->
 
-    </section>
+            <div class="btn-container">
+                <a
+                    class="btn btn-color-2"
+                    href="img/robinson.pdf" download="robinson">
+                    Download CV
+                </a>
+                <a
+                    class="btn btn-color-2"
+                    href="img/robinson.pdf">
+                    Contact
+                </a>
+            </div>
+            <div id="social-container">
+                <img src="img/linkedin.png" alt="Mi perfil de linkedin"
+                class="icon" onclick="location.href='//www.linkedin.com/in/gerson-paulino-b2b772273/'">
 
-    <section class="product" id="product">
+                <img src="img/github-mark.png" alt="Mi perfil de GitHub"
+                class="icon" onclick="location.href='//github.com/GersonWoW'">
+            </div>
+         </div>
+     </section>
 
-        <div class="box-container">
-
-            <div class="box">
-                <i class="fab fa-angular" ></i>
-                <h3>care angular</h3>
-                <p>peo</p>
+     <!--segunda seccion-->
+     <section id="about">
+        <p class="section_p1">Get To Know More</p>
+        <h1 class="titulo">About me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="img/about.png" 
+                alt="pic-about"
+                class="about-pic">
+                <img src="img/about3.png"
+                alt="pic-about3"
+                class="about-pic3">
             </div>
 
-            <div class="box">
-                <i class="fab fa-apple" ></i>
-                <h3>care manzana</h3>
-                <p>peo</p>
-            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="img/oym.png" alt="star icon"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p>Systems engineering
+                        <br/>Universidad Dominicana O&M
+                        </p>
+                    </div>
+                    <div class="section_text-container">
+                        <p>Una biografía es un texto narrativo que cuenta 
+                            los sucesos relevantes en la vida de una persona
+                            en orden cronológico para entender su personalidad,
+                            motivaciones, problemas y el trasfondo de sus éxitos y fracasos.
+                        </p>
+                    </div>
+                </div>
 
-            <div class="box">
-                <i class="fab fa-android" ></i>
-                <h3>care android</h3>
-                <p>peo</p>
             </div>
-
         </div>
+        <img src="img/down.png" 
+        class="icon down" alt="Down" 
+        onclick="location.href='./#project'">
+        
+     </section>
 
-        <a href="$"> <button>show more</button></a>
-
-    </section>
-
-    <section class="about" id="about">
-        <h1 class="heading">Nosotros</h1>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-        <div class="row">
-            <div class="image ">
-                <img src="img/" alt=""> <!--agregar ruta de imagne-->
-            </div>
-            <div class="content">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                <p>care peo</p>
-                <a href="$"><button>leer mas</button></a>
+     <!--Tercera seccion-->
+     <section id="project">
+        <p class="section_p1">Browse my recent</p>
+        <h1 class="titulo">Project</h1>
+        <div class="project-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="img/SHOCHOPROJEC.png" alt="project1"
+                        class="project-img">
+                    </div>
+                    <h2 class="Skills-sub-tittle project-titulo">SHOCHO.shop</h2>
+                    <div class="btn-container">
+                        <button
+                        class="btn-color-2 project-btn"
+                        onclick="location.href='//github.com/'"
+                        >
+                        GitHub
+                        </button>
+                        <button
+                        class="btn-color-2 project-btn"
+                        onclick="location.href='//github.com/'"
+                        >
+                        DEMO
+                        </button>
+                    </div>         
+                </div>  
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="img/SHOCHOPROJEC.png" alt="project1"
+                        class="project-img">
+                    </div>
+                    <h2 class="Skills-sub-tittle project-titulo">SHOCHO.shop</h2>
+                    <div class="btn-container">
+                        <button
+                        class="btn-color-2 project-btn"
+                        onclick="location.href='//github.com/'"
+                        >
+                        GitHub
+                        </button>
+                        <button
+                        class="btn-color-2 project-btn"
+                        onclick="location.href='//github.com/'"
+                        >
+                        DEMO
+                        </button>
+                    </div>         
+                </div>                  <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="img/SHOCHOPROJEC.png" alt="project1"
+                        class="project-img">
+                    </div>
+                    <h2 class="Skills-sub-tittle project-titulo">SHOCHO.shop</h2>
+                    <div class="btn-container">
+                        <button
+                        class="btn-color-2 project-btn"
+                        onclick="location.href='//github.com/'"
+                        >
+                        GitHub
+                        </button>
+                        <button
+                        class="btn-color-2 project-btn"
+                        onclick="location.href='//github.com/'"
+                        >
+                        DEMO
+                        </button>
+                    </div>         
+                </div>  
             </div>
         </div>
-    </section>
+        <img src="img/down.png" 
+        class="icon down" alt="Down" 
+        onclick="location.href='./#Skills'">
+     </section>
 
-   </body>
+     <!--Cuarta seccion-->
+     <section id="Skills">
+        <p class="section_p1">Explorer my</p>
+        <h1 class="titulo">Skills</h1>
+        <div class="skill-details-container">
+            <div class="about-container">
+                <div class="details-container"> <!--Front-->
+                    <h2 class="Skills-sub-tittle"> Frontend Developer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="img/html.png" alt="Checkmark"
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="img/css.png" alt="Checkmark"
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>                        <article>
+                            <img src="img/JS.png" alt="Checkmark"
+                            class="icon">
+                            <div>
+                                <h3>JavaScrip</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                        <img src="img/Checkmark.png" alt="Checkmark"
+                        class="icon">
+                        <div>
+                            <h3>JavaScrip</h3>
+                            <p>Basic</p>
+                        </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container"><!--Back-->
+                    <h2 class="Skills-sub-tittle"> Backtend Developer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="img/mysql.png" alt="Checkmark"
+                            class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="img/Checkmark.png" alt="Checkmark"
+                            class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>                        <article>
+                            <img src="img/Checkmark.png" alt="Checkmark"
+                            class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>                        <article>
+                            <img src="img/Checkmark.png" alt="Checkmark"
+                            class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!--Quinta seccion-->
+     <section id="contact">
+        <p class="section_p1">Get in touch</p>
+        <h1 class="titulo">Contac Me</h1>
+        <div class="details-container">
+            <div class="contact-info-container">
+                <img 
+                    src="img/Email.png" 
+                    alt="EMAIL ICON"
+                    class="icon contact-icon"
+                    />
+                    <p><a href="mailto:gersonpaulinom@gmail.com">gersonpaulinom@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="img/whatsaap.png" 
+                    alt="EMAIL ICON"
+                    class="icon contact-icon"
+                    />
+                    <p><a href="https://api.whatsapp.com/qr/CMUHUAPUEUIUH1?autoload=1&app_absent=0">Text me</a></p>
+            </div>
+        </div>
+     </section>
+
+     <!--sexta-->
+     <footer id="futeL">
+        <div class="navbar">
+            <div class="logo">
+                <a class="$">Home</a>
+            </div>
+            <ul class="links">
+                <li><a href="$about">About</a></li>
+                <li><a href="$project">Project</a></li>
+                <li><a href="$Skills">Skills</a></li>
+                <li><a href="$Contact">Contact</a></li>
+            </ul>
+        </div>
+        <p>Copyright © 2023 Luis G. All Rights Reserved.</p>    
+     </footer>
+
+     <script>
+        const toggle_btn = document.querySelector('.toggle_btn')
+        const toggle_btnIcon = document.querySelector('.toggle_btn i')
+        const dropdown_menu = document.querySelector('.dropdown_menu')
+        toggle_btn.onclick = function () {
+        dropdown_menu.classList.toggle('open')
+        }
+     </script>
+
+    <div class="scroll"></div> 
+     <script src ="main.js" ></script>
+
+</body>
 </html>

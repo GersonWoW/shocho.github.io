@@ -1,0 +1,21 @@
+    background-image: url(https://img2.wallspic.com/crops/8/8/4/3/4/143488/143488-hito-paisaje_urbano-obra_de_arte-morado-arte-4096x2400.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+    border-radius: 100%;
+    background: #d1d1d1;
+    box-shadow:  16px 16px 33px #626262,
+                 -16px -16px 33px #ffffff;
+
+                 var header = document.getElementById('Header');
+
+window.addEventListener('scroll',()=>{
+    var scroll = window.screenY
+
+    if (scroll>10){
+        header.style.backgroundColor = '#121212'
+    } else {
+        header.style.backgroundColor = 'transparent'
+    }
+})
